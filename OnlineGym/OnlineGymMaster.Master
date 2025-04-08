@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnlineGymMaster.master.cs" Inherits="OnlineGym.OnlineGymMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Online Gym Handling</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="images/bg.jpg">
+<form id="form1" runat="server">
+<div id="wrapper">
+    <div id="header-wrapper">
+    	<div id="header" class="container">
+        	<div id="logo">
+				<h1><%--<a href="#">Muscle Planet</a>--%><img src="images/logo.png" width="400px" height="60px"</h1>
+                <br />
+                
+			</div>			
+            <div id="menu">
+            
+				<ul>
+					<li class="current_page_item" ><a href="Home.aspx" style="color:#000;background-color:#ffffff">Home</a></li>
+					<li class="current_page_item"><a href="Features.aspx" style="color:#000;background-color:#ffffff">Features</a></li>
+                    <li class="current_page_item"><a href="Timings.aspx" style="color:#000;background-color:#ffffff">Timings</a></li>
+					<li class="current_page_item"><a href="Fees.aspx" style="color:#000;background-color:#ffffff">Fees</a></li>
+					<li class="current_page_item"><a href="AboutUs.aspx" style="color:#000;background-color:#ffffff">About</a></li>
+					<li class="current_page_item"><a href="ContactUs.aspx" style="color:#000;background-color:#ffffff">Contact</a></li>
+
+                    <li class="current_page_item" id="liUser" runat="server"><a href="AddUserDetails.aspx" style="color:#000;background-color:#ffffff">Users</a></li>
+                    <li class="current_page_item" id="liTimeTable" runat="server"><a href="ManageTimeTable.aspx" style="color:#000;background-color:#ffffff">TimeTable</a></li>
+                    <li class="current_page_item" id="liTrainer" runat="server"><a href="ManageTrainers.aspx" style="color:#000;background-color:#ffffff">Trainers</a></li>
+                    <li class="current_page_item" id="liFees" runat="server"><a href="ManageUserFees.aspx" style="color:#000;background-color:#ffffff">Fees</a></li>
+                    <li class="current_page_item" id="liViewFees" runat="server"><a href="ViewUserFees.aspx" style="color:#000;background-color:#ffffff">View Fees</a></li>
+                    
+                    <li class="current_page_item" id="liCategory" runat="server"><a href="ManageCategory.aspx" style="color:#000;background-color:#ffffff">Category</a></li>
+                    <li class="current_page_item" id="liCategoryDet" runat="server"><a href="CategoryDetails.aspx" style="color:#000;background-color:#ffffff">Category Details</a></li>
+                    <li class="current_page_item" id="liViewDailyWO" runat="server"><a href="DailyWorkoutReport.aspx" style="color:#000;background-color:#ffffff">View DWO</a></li>
+                    <li class="current_page_item" id="liViewUserDWO" runat="server"><a href="UserDailyWorkOut.aspx" style="color:#000;background-color:#ffffff">View DWO</a></li>
+                    <li class="current_page_item" id="liManageDWO" runat="server"><a href="ManageDailyWorkout.aspx" style="color:#000;background-color:#ffffff">Manage DWO</a></li>
+                    <li class="current_page_item">
+    <asp:LinkButton ID="lbLogin" runat="server" onclick="lbLogin_Click" CausesValidation="False" style="color:#000;background-color:#ffffff">Login</asp:LinkButton>
+</li>
+
+                   
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+	</div>
+    </form>
+<div id="footer">
+	<p> <a href="http://fotogrph.com/"></a> <a href="http://www.freecsstemplates.org"></a></p>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+            
+            <div class="footer_content">
+            <div class="footer_text">
+                       <center> Power Gym | developed by Tejas Gadhave and Sanket Shirke </center><a href="#"> <br /><center>Fitness Service</center> </br> </a>
+            </div>
+                </div>
+  
+       
+</footer>
+
+
+
+    
+</div>
+
+</body>
+</html>
